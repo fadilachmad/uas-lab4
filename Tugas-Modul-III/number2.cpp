@@ -32,18 +32,22 @@ int main ()
 
     cout << "Tanggungan anak  : ";
     cin >>anak;
-    if (anak == 0)
+    switch (anak)
     {
-        gajiAnak = 0;
-    }
-    else if (anak <= 2)
-    {
+    case 1:
         gajiAnak = 500000;
+        break;
+    case 2:
+        gajiAnak = 1000000;
+        break;
+    case 3:
+        gajiAnak = 2250000;
+        break;
+    default:
+        gajiAnak = 0;
+        break;
     }
-    else
-    {
-        gajiAnak = 750000;
-    }
+
 
     gajiAkhir = gajiGol - (gajiGol*5/100);
     terimaGaji = gajiAkhir + gajiAnak;
