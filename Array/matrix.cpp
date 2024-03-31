@@ -2,6 +2,7 @@
 using namespace std;
 int main(){
     int n,m;
+    system("cls");
     cout << "Anda akan membuat sebuah matriks?\n";
     cout << "masukkan banyak baris : ";
     cin >> n;
