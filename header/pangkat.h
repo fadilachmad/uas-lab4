@@ -1,9 +1,7 @@
-#include <iostream>
-using namespace std;
-int pangkat (int a, int b){
-    int hasil= 1;
-    for(int i = 1; i <= b; i++){
-        hasil = hasil*a;
+int pangkat (int x, int y){
+    int z = 1;
+    for(int i = 1; i <= y; i++){
+        z *= x;
     }
-    return hasil;
+    return z;
 }
