@@ -1,21 +1,22 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
-void tambah (int *ptr_a, int *ptr_b){
+void tambah (float *ptr_a, float *ptr_b){
     cout << *ptr_a + *ptr_b;
 }
-void kurang (int *ptr_a, int *ptr_b){
+void kurang (float *ptr_a, float *ptr_b){
     cout << *ptr_a - *ptr_b;
 }
-void kali (int *ptr_a, int *ptr_b){
+void kali (float *ptr_a, float *ptr_b){
     cout << *ptr_a * *ptr_b;
 }
-void bagi (int *ptr_a, int *ptr_b){
+void bagi (float *ptr_a, float *ptr_b){
     cout << *ptr_a / *ptr_b;
 }
 
 int main (){
-    int a,b;
+    float a,b;
     char op;
     cout << "masukkan angka pertama : ";
     cin >> a;
@@ -25,6 +26,7 @@ int main (){
     cin >> b;
 
     cout << "hasil dari " << a << op << b << " = ";
+    cout << setprecision(2) << fixed;    
     switch(op){
         case '+' : tambah(&a, &b);
         break;

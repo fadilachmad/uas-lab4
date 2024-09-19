@@ -54,7 +54,7 @@ bool bookSeat(Movie* movie, int row, int col, int rows, int cols) {
 }
 
 void showMenu() {
-    cout << "1. Display Seats\n";
+    cout << "\n1. Display Seats\n";
     cout << "2. Book Seat\n";
     cout << "3. Select Movie\n";
     cout << "4. Exit\n";
